@@ -1,0 +1,40 @@
+{
+  "name": "pi-refuseless",
+  "version": "1.0.0",
+  "description": "Pi provider extension for Refuseless (https://api.refuseless.com/v1) with dynamic model discovery",
+  "author": "httpjamesm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/httpjamesm/pi-refuseless.git"
+  },
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-provider",
+    "refuseless"
+  ],
+  "files": [
+    "extensions",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/refuseless/index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "^1.6.0",
+    "@earendil-works/pi-coding-agent": "^1.6.0"
+  }
+}
