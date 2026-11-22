@@ -11,12 +11,7 @@ show up without an extension update.
 pi install git:github.com/httpjamesm/pi-refuseless
 ```
 
-Pi clones the repository over HTTPS. If `git clone` asks for a username, route
-GitHub over SSH instead:
-
-```bash
-git config --global url."git@github.com:".insteadOf "https://github.com/"
-```
+Pi clones the repository over HTTPS.
 
 Then authenticate and pick a model:
 
